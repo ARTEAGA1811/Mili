@@ -9,6 +9,7 @@ public class MiliApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(MiliApplication.class, args);
+
     }
 
 }

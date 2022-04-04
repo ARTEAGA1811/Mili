@@ -9,6 +9,7 @@ import java.util.Optional;
 
 public interface IUsuarioDAO extends CrudRepository<Usuario,Integer> {
     public Optional<Usuario> findUsuarioByNombreUsuarioAndClave(String nombreUsuario, String clave);
+    public Usuario findUsuarioByNombreUsuario(String nombreUsuario);
 
 //    //@Modifying is for telling spring-data-jpa that this query is an update operation and it requires executeUpdate() not executeQuery().
 //    @Modifying

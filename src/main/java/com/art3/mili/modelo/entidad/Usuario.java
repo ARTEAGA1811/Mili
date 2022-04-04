@@ -20,7 +20,7 @@ public class Usuario {
     @Column(name="nombre_usuario", length =30, nullable = false)
     private String nombreUsuario;
 
-    @Column(length = 30, nullable = false)
+    @Column(nullable = false)
     private String clave;
 
     @OneToMany(mappedBy = "usuario")
